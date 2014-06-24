@@ -17,8 +17,8 @@
             </div>
             <div class="span8">
                 <ul class="pull-right breadcrumb">
-                    <li><a href="/">Home</a> <span class="divider">/</span></li>
-                    <li><a href="/">About us</a> <span class="divider">/</span></li>
+                    <li><a href="<?php echo WEB; ?>/">Home</a> <span class="divider">/</span></li>
+                    <li><a href="<?php echo WEB; ?>/">About us</a> <span class="divider">/</span></li>
                     <li class="active">Departments</li>
                 </ul>
             </div>
@@ -50,13 +50,13 @@
 		<br><br>
 		<div class='row-fluid'>
 			<span class='span4'>
-				<a href="/aiesec/" class="btn big blue btn-block">About AIESEC <i class="m-icon-big-swapright m-icon-white"></i></a>
+				<a href="<?php echo WEB; ?>/aiesec/" class="btn big blue btn-block">About AIESEC <i class="m-icon-big-swapright m-icon-white"></i></a>
 			</span>
 			<span class='span4'>
-				<a href="/students/intern/" class="btn big blue btn-block">Apply for Internship <i class="m-icon-big-swapright m-icon-white"></i></a>
+				<a href="<?php echo WEB; ?>/students/intern/" class="btn big blue btn-block">Apply for Internship <i class="m-icon-big-swapright m-icon-white"></i></a>
 			</span>
 			<span class='span4'>
-				<a href="/students/member/" class="btn big blue btn-block">Become a Member <i class="m-icon-big-swapright m-icon-white"></i></a>
+				<a href="<?php echo WEB; ?>/students/member/" class="btn big blue btn-block">Become a Member <i class="m-icon-big-swapright m-icon-white"></i></a>
 			</span>
         </div>
 		<br><br>

@@ -37,7 +37,7 @@ class Html {
     <link href="<?php echo ASSETS;?>css/style-responsive.css" rel="stylesheet" type="text/css"/>
     <!-- END GLOBAL MANDATORY STYLES -->
     <link href="<?php echo ASSETS;?>css/themes/blue.css" rel="stylesheet" type="text/css" id="style_color"/>    
-    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="shortcut icon" href="<?php echo WEB; ?>/favicon.ico" />
 </head>
 <!-- END HEAD -->
 
@@ -61,7 +61,7 @@ class Html {
                 <div class="navbar-inner">
 				
                     <!-- BEGIN LOGO (you can use logo image instead of text)-->
-                    <a class="brand logo-v1" href="/">
+                    <a class="brand logo-v1" href="<?php echo WEB; ?>/">
                         <img src="/assets/img/logo_blue.png" id="logoimg" alt="">
                     </a>
                     <!-- END LOGO -->
@@ -78,21 +78,21 @@ class Html {
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li <?php if($active=="home"){?>class="active"<?php }?>>
-                                <a href="/">
+                                <a href="<?php echo WEB; ?>/">
                                     Home
                                 </a>
                             </li>
                             <li class="dropdown <?php if($active=="aiesec"){?> active<?php }?>">
-								<a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="/aiesec/">
+								<a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="<?php echo WEB; ?>/aiesec/">
 									AIESEC
 									<i class="icon-angle-down"></i>
                                 </a>
 								<ul class="dropdown-menu">
-                                    <li <?php if($activesub=="overview"){?> class="active"<?php }?>><a href="/aiesec/overview/">Overview</a></li>
-                                    <li <?php if($activesub=="who"){?> class="active"<?php }?>><a href="/aiesec/who/">Who We Are</a></li>
-                                    <li <?php if($activesub=="network"){?> class="active"<?php }?>><a href="/aiesec/network/">Network</a></li>
-                                    <li <?php if($activesub=="history"){?> class="active"<?php }?>><a href="/aiesec/history/">History</a></li>
-                                    <li <?php if($activesub=="hall"){?> class="active"<?php }?>><a href="/aiesec/hall/">Hall of Fame</a></li>
+                                    <li <?php if($activesub=="overview"){?> class="active"<?php }?>><a href="<?php echo WEB; ?>/aiesec/overview/">Overview</a></li>
+                                    <li <?php if($activesub=="who"){?> class="active"<?php }?>><a href="<?php echo WEB; ?>/aiesec/who/">Who We Are</a></li>
+                                    <li <?php if($activesub=="network"){?> class="active"<?php }?>><a href="<?php echo WEB; ?>/aiesec/network/">Network</a></li>
+                                    <li <?php if($activesub=="history"){?> class="active"<?php }?>><a href="<?php echo WEB; ?>/aiesec/history/">History</a></li>
+                                    <li <?php if($activesub=="hall"){?> class="active"<?php }?>><a href="<?php echo WEB; ?>/aiesec/hall/">Hall of Fame</a></li>
                                 </ul>
 							</li>
                             <li class="dropdown <?php if($active=="about"){?> active<?php }?>">
@@ -102,7 +102,7 @@ class Html {
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li <?php if($activesub=="history"){?> class="active"<?php }?>><a hrf="/we/history/">History</a></li>
-                                    <li <?php if($activesub=="departments"){?> class="active"<?php }?>><a href="/we/departments/">Departments</a></li>
+                                    <li <?php if($activesub=="departments"){?> class="active"<?php }?>><a href="<?php echo WEB; ?>/we/departments/">Departments</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown <?php if($active=="students"){?> active<?php }?>">
@@ -111,8 +111,8 @@ class Html {
                                     <i class="icon-angle-down"></i>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li <?php if($activesub=="intern"){?> class="active"<?php }?>><a href="/students/intern/">Apply For Internship</a></li>
-                                    <li <?php if($activesub=="member"){?> class="active"<?php }?>><a href="/students/member/">Become a Member</a></li>
+                                    <li <?php if($activesub=="intern"){?> class="active"<?php }?>><a href="<?php echo WEB; ?>/students/intern/">Apply For Internship</a></li>
+                                    <li <?php if($activesub=="member"){?> class="active"<?php }?>><a href="<?php echo WEB; ?>/students/member/">Become a Member</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown <?php if($active=="organisations"){?> active<?php }?>">
@@ -121,10 +121,10 @@ class Html {
                                     <i class="icon-angle-down"></i>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li <?php if($activesub=="partner"){?> class="active"<?php }?>><a href="/organisations/partner/">Partner with AIESEC</a></li>
+                                    <li <?php if($activesub=="partner"){?> class="active"<?php }?>><a href="<?php echo WEB; ?>/organisations/partner/">Partner with AIESEC</a></li>
                                     <li <?php if($activesub=="workwith"){?> class="active"<?php }?>><a hrf="/organisations/workwith/">Who we work with</a></li>
                                     <li <?php if($activesub=="international"){?> class="active"<?php }?>><a hrf="/organisations/international/">Hire International Talent</a></li>
-                                    <li <?php if($activesub=="national-advisors"){?> class="active"<?php }?>><a href="/organisations/national-advisors/">National Board of Advisors</a></li>
+                                    <li <?php if($activesub=="national-advisors"){?> class="active"<?php }?>><a href="<?php echo WEB; ?>/organisations/national-advisors/">National Board of Advisors</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown <?php if($active=="events"){?> active<?php }?>">
@@ -139,7 +139,7 @@ class Html {
                                 </ul>
                             </li>
                             
-                            <li <?php if($active=="contact"){?> class="active"<?php }?>><a href="/contact/">Contact</a></li>
+                            <li <?php if($active=="contact"){?> class="active"<?php }?>><a href="<?php echo WEB; ?>/contact/">Contact</a></li>
                             <li class="menu-search">
                                 <span class="sep"></span>
                                 <i class="icon-search search-btn"></i>

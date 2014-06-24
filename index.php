@@ -17,21 +17,21 @@
             <div class="span4">
                 <div class="service-box-heading">
                     <em><i class="icon-location-arrow blue"></i></em>
-                    <span><a href="/students/member/">Become A Member</a></span>
+                    <span><a href="<?php echo WEB; ?>/students/member/">Become A Member</a></span>
                 </div>
 				<p>AIESEC is a platform to develop oneself in multiple aspects for all round development of one’s personality and skills to tackle any upcoming situation in any field of work.</p>
             </div>
             <div class="span4">
                 <div class="service-box-heading">
                     <em><i class="icon-ok red"></i></em>
-                    <span><a href="/students/intern/">Apply For Internship</a></span>
+                    <span><a href="<?php echo WEB; ?>/students/intern/">Apply For Internship</a></span>
                 </div>
 				<p>Professional Internships are a perfect platform for gaining knowledge, practical experience and intense learning. One gets the opportunity to work in their areas of interest gaining experience and knowledge.</p>
             </div>
             <div class="span4">
                 <div class="service-box-heading">
                     <em><i class="icon-resize-small green"></i></em>
-                    <span><a href="/organisations/partner/">Become A Partner</a></span>
+                    <span><a href="<?php echo WEB; ?>/organisations/partner/">Become A Partner</a></span>
                 </div>
 				<p>AIESEC engages with many Corporates, NGOs' and various organisations to support their purpose of Global Employer Branding. If you are interested in what we do, you can be our partner.</p>
             </div>
@@ -44,7 +44,7 @@
                 <span>We are glad to be the part of World's largest youth community! You?</span>
             </div>
             <div class="span3 quote-v1-inner text-right">
-                <a class="btn-transparent" href="/aiesec/"><i class="icon-rocket margin-right-10"></i>Know about AIESEC</a>
+                <a class="btn-transparent" href="<?php echo WEB; ?>/aiesec/"><i class="icon-rocket margin-right-10"></i>Know about AIESEC</a>
             </div>
         </div>
         <!-- END BLOCKQUOTE BLOCK -->

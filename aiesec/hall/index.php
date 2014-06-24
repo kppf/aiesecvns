@@ -17,8 +17,8 @@
             </div>
             <div class="span8">
                 <ul class="pull-right breadcrumb">
-                    <li><a href="/">Home</a> <span class="divider">/</span></li>
-                    <li><a href="/aiesec/">AIESEC</a> <span class="divider">/</span></li>
+                    <li><a href="<?php echo WEB; ?>/">Home</a> <span class="divider">/</span></li>
+                    <li><a href="<?php echo WEB; ?>/aiesec/">AIESEC</a> <span class="divider">/</span></li>
                     <li class="active">Hall of Fame</li>
                 </ul>
             </div>
@@ -79,13 +79,13 @@
 		<br><br>
 		<div class='row-fluid'>
 			<span class='span4'>
-				<a href="/aiesec/" class="btn big blue btn-block">More about AIESEC <i class="m-icon-big-swapright m-icon-white"></i></a>
+				<a href="<?php echo WEB; ?>/aiesec/" class="btn big blue btn-block">More about AIESEC <i class="m-icon-big-swapright m-icon-white"></i></a>
 			</span>
 			<span class='span4'>
 				<a href="http://aiesec.org/" class="btn big blue btn-block">AIESEC website <i class="m-icon-big-swapright m-icon-white"></i></a>
 			</span>
 			<span class='span4'>
-				<a href="/we/" class="btn big blue btn-block">AIESEC, IIT(BHU), Varanasi <i class="m-icon-big-swapright m-icon-white"></i></a>
+				<a href="<?php echo WEB; ?>/we/" class="btn big blue btn-block">AIESEC, IIT(BHU), Varanasi <i class="m-icon-big-swapright m-icon-white"></i></a>
 			</span>
         </div>
 		<br><br><br>

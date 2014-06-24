@@ -17,7 +17,7 @@
             </div>
             <div class="span8">
                 <ul class="pull-right breadcrumb">
-                    <li><a href="/">Home</a> <span class="divider">/</span></li>
+                    <li><a href="<?php echo WEB; ?>/">Home</a> <span class="divider">/</span></li>
                     <li><a href="">Students</a> <span class="divider">/</span></li>
                     <li class="active">Become a member</li>
                 </ul>
