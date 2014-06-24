@@ -1,0 +1,2 @@
+; put the absolute  path to settings.php here
+auto_prepend_file = "/var/chroot/home/content/75/10224475/html/fasket/shal14pf1201/aiesec/settings.php"

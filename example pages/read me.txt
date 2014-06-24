@@ -1,0 +1,1 @@
+Copy the file to the parent directory and then open.

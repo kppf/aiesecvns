@@ -1,0 +1,28 @@
+<?php
+// DO NOT PLAY WITH THIS FILE UNLESS YOU KNOW WHAT THE HELL YOU ARE DOING
+define('ASSETS','http://'.$_SERVER['SERVER_NAME'].'/assets/',true);
+define('ASSETS_ROOT',__DIR__ . '/assets/',true);
+define('FNS',__DIR__ . '/aiesec-fns',true);
+define('ROOT',__DIR__,true);
+
+// DATABASE CONFIGURATION
+define('DB_ENGINE','mysql',true);		// database engine
+define('DB_HOST','localhost',true);		// database host
+define('DB_NAME','aiesec',true);		// database name
+define('DB_USER','root',true);			// database user
+define('DB_PASSWD','',true);			// database password
+
+// preventing XSS attack by htmlspecialchars on every GET and POST requests
+htmlspecial_array($_GET);
+htmlspecial_array($_POST);
+
+function htmlspecial_array(&$variable) {
+	foreach ($variable as &$value) {
+		if (!is_array($value)) { 
+			$value = htmlspecialchars($value); 
+		} else { 
+			htmlspecial_array($value); 
+		}
+	}
+}
+?>

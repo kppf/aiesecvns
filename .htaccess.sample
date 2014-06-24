@@ -1,0 +1,54 @@
+# PUT THE ABSOLUTE PATH TO SETTINGS.PHP TO RUN THE PROJECT.
+# php_value auto_prepend_file C:/wamp/www/f/settings.php
+
+# Block access to directories without a default document.
+# Usually you should leave this uncommented because you shouldn't allow anyone
+# to surf through every directory on your server (which may includes rather
+# private places like the CMS's directories).
+
+ErrorDocument 404 /404/
+ErrorDocument 403 /404/
+
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+
+RewriteEngine on
+# Make the file doesn't actually exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# Strip out the version number
+RewriteRule ^(.*)\.[\d]+\.(css|js)$ $1.$2 [L]
+
+# Turn on the Expires engine
+ExpiresActive On
+
+# Expires after a month client accesses the file
+ExpiresByType image/jpeg A31104000
+ExpiresByType image/gif A31104000
+ExpiresByType image/png A31104000
+ExpiresByType image/x-icon A31104000
+ExpiresByType text/plain A31104000
+
+# Good for one week
+ExpiresByType application/x-javascript A31104000
+ExpiresByType application/javascript A31104000
+ExpiresByType text/css A31104000
+ExpiresByType text/html A31104000
+
+
+# compress text, html, javascript, css, xml:
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+
+# Or, compress certain file types by extension:
+<files *.html>
+SetOutputFilter DEFLATE
+</files>
