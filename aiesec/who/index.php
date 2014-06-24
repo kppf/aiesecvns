@@ -4,7 +4,7 @@
  *	@code the aiesec overview page
  */
     session_start();
-    require_once($_SERVER['DOCUMENT_ROOT'].'/aiesec-fns/static/static.php');
+    require_once(FNS.'/static/static.php');
 	
     $sobj = new Html;
     $sobj->header('Who we are | AIESEC','aiesec','who');
@@ -41,7 +41,7 @@
 				<p class='text-success'>AIESEC members live an integrated development experience. This involves leadership opportunities, international internships and interacting with a global network to support their development. </p>
             </div>
 			<div class="span4">
-				<img src='/assets/img/pics/img1-medium.jpg'>
+				<img src='<?php echo ASSETS; ?>/img/pics/img1-medium.jpg'>
 			</div>
 			<!-- END SERVICE BLOCKS -->  
 		</div>

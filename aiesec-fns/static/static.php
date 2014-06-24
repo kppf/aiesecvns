@@ -62,7 +62,7 @@ class Html {
 				
                     <!-- BEGIN LOGO (you can use logo image instead of text)-->
                     <a class="brand logo-v1" href="<?php echo WEB; ?>/">
-                        <img src="/assets/img/logo_blue.png" id="logoimg" alt="">
+                        <img src="<?php echo ASSETS; ?>/img/logo_blue.png" id="logoimg" alt="">
                     </a>
                     <!-- END LOGO -->
 
@@ -181,16 +181,16 @@ class Html {
                     <!-- BEGIN BLOG PHOTOS STREAM -->
                     <div class="blog-photo-stream margin-bottom-30">
                         <ul class="unstyled">
-                            <li><a href="#"><img src="/assets/img/people/img5-small.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="/assets/img/works/img1.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="/assets/img/people/img4-large.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="/assets/img/works/img6.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="/assets/img/pics/img1-large.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="/assets/img/pics/img2-large.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="/assets/img/works/img3.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="/assets/img/people/img2-large.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="/assets/img/works/img2.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="/assets/img/works/img5.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="<?php echo ASSETS; ?>/img/people/img5-small.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="<?php echo ASSETS; ?>/img/works/img1.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="<?php echo ASSETS; ?>/img/people/img4-large.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="<?php echo ASSETS; ?>/img/works/img6.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="<?php echo ASSETS; ?>/img/pics/img1-large.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="<?php echo ASSETS; ?>/img/pics/img2-large.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="<?php echo ASSETS; ?>/img/works/img3.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="<?php echo ASSETS; ?>/img/people/img2-large.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="<?php echo ASSETS; ?>/img/works/img2.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="<?php echo ASSETS; ?>/img/works/img5.jpg" alt=""></a></li>
                         </ul>                    
                     </div>
                     <!-- END BLOG PHOTOS STREAM -->                              
@@ -287,13 +287,13 @@ class Html {
           <div id="heroSlider" class="carousel slide">
             <div class="carousel-inner">
               <div class="item">
-                    <div class="carousel-img" style="background-image:url('/assets/img/sliders/1.jpg');"></div>
+                    <div class="carousel-img" style="background-image:url('<?php echo ASSETS; ?>/img/sliders/1.jpg');"></div>
               </div>
               <div class="item active">
-                    <div class="carousel-img" style="background-image:url('/assets/img/carousel/2.jpg')"></div>
+                    <div class="carousel-img" style="background-image:url('<?php echo ASSETS; ?>/img/carousel/2.jpg')"></div>
               </div>
               <div class="item">
-                    <div class="carousel-img" style="background-image:url('/assets/img/carousel/3.jpg')"></div>
+                    <div class="carousel-img" style="background-image:url('<?php echo ASSETS; ?>/img/carousel/3.jpg')"></div>
               </div>
             </div>
             <a class="left carousel-control" href="#heroSlider" data-slide="prev">&lsaquo;</a>

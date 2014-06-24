@@ -4,7 +4,7 @@
  *	@code the aiesec india national board of advisors page
  */
     session_start();
-    require_once($_SERVER['DOCUMENT_ROOT'].'/aiesec-fns/static/static.php');
+    require_once(FNS.'/static/static.php');
 	
     $sobj = new Html;
     $sobj->header('National Board of Advisors | AIESEC, India','organisations','national-advisors');

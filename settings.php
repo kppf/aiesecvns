@@ -1,10 +1,10 @@
 <?php
 // DO NOT PLAY WITH THIS FILE UNLESS YOU KNOW WHAT THE HELL YOU ARE DOING
-define('ASSETS','http://'.$_SERVER['SERVER_NAME'].'/assets/',true);
+define('ASSETS','http://localhost/aiesec-new/assets/',true);
 define('ASSETS_ROOT',__DIR__ . '/assets/',true);
 define('FNS',__DIR__ . '/aiesec-fns',true);
 define('ROOT',__DIR__,true);
-define('WEB','http://'.$_SERVER['SERVER_NAME'], true);
+define('WEB','http://localhost/aiesec-new', true);
 
 // DATABASE CONFIG
 define('DB_ENGINE','mysql',true);

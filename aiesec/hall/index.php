@@ -4,7 +4,7 @@
  *	@code the aiesec hall of fame page
  */
     session_start();
-    require_once($_SERVER['DOCUMENT_ROOT'].'/aiesec-fns/static/static.php');
+    require_once(FNS.'/static/static.php');
 	
     $sobj = new Html;
     $sobj->header('Hall of Fame | AIESEC','aiesec','hall');

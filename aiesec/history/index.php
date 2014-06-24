@@ -4,7 +4,7 @@
  *	@code the aiesec history page
  */
     session_start();
-    require_once($_SERVER['DOCUMENT_ROOT'].'/aiesec-fns/static/static.php');
+    require_once(FNS.'/static/static.php');
 	
     $sobj = new Html;
     $sobj->header('History | AIESEC','aiesec','history');
@@ -57,7 +57,7 @@
 				<p class='text-warning'>The 60th anniversary celebrations of 2008 saw AIESEC celebrating the history and achievements of 60 years of activating youth leadership in over 100 countries and territories. For more on these celebrations and the history of AIESEC itself, you can download the AIESEC 60th publication <a href="http://www.aiesec.org/cms/export/sites/default/AI/60/files/AII_60Book_08_LR.pdf">here</a> </p>
             </div>
 			<div class="span4">
-				<img src='/assets/img/pics/img1-medium.jpg'>
+				<img src='<?php echo ASSETS; ?>/img/pics/img1-medium.jpg'>
 			</div>
 			<!-- END SERVICE BLOCKS -->  
 		</div>
